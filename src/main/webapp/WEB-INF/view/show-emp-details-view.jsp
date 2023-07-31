@@ -1,16 +1,16 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-
 <head>
     <title>Title</title>
 </head>
-
 <body>
 
-<h2>I wish you luck in Spring MVC learning!!!</h2>
+<h2>Dear Employee, you are WELCOME!!!</h2>
+<br>
+<br>
+<br>
 
-<a href="askDetails">Please write you details.</a>
+Your name: ${param.employeeName}
 
 </body>
-
 </html>
