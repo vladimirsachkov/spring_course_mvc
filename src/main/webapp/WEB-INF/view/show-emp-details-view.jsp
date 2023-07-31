@@ -10,9 +10,11 @@
 <br>
 <br>
 
-<%--Your name: ${param.employeeName}--%>
-
-Your name: ${nameAttribute}
+Your name: ${employee.name}
+<br>
+Your surname: ${employee.surname}
+<br>
+Your salary: ${employee.salary}
 
 </body>
 </html>
