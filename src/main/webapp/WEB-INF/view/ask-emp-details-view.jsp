@@ -9,6 +9,6 @@
     <input type="text" name="employeeName"
            placeholder="Write your name"/>
 
-    <input type="submit"/>
+    <input type="submit" value="Отправить"/>
 </body>
 </html>
