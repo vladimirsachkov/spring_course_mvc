@@ -1,12 +1,20 @@
 package com.zaurtregulov.spring.mvc;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Employee {
     private String name;
     private String surname;
     private int salary;
     private String department;
+    private Map<String, String> departments;
 
     public Employee() {
+        departments = new HashMap<>();
+        departments.put("IT", "Information Technology");
+        departments.put("HR", "Human Resources");
+        departments.put("Sales", "Sales");
     }
 
     public String getName() {
@@ -39,6 +47,14 @@ public class Employee {
 
     public void setDepartment(String department) {
         this.department = department;
+    }
+
+    public Map<String, String> getDepartments() {
+        return departments;
+    }
+
+    public void setDepartments(Map<String, String> departments) {
+        this.departments = departments;
     }
 
     @Override
