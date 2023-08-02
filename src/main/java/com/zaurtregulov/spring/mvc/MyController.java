@@ -4,8 +4,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
@@ -30,7 +29,7 @@ public class MyController {
         return "ask-emp-details-view";
     }
 
-    @RequestMapping("/showDetails")
+    @PostMapping(path = "/showDetails")
     public String showEmpDetails(@Valid @ModelAttribute("employee") Employee emp
     , BindingResult bindingResult) {
 
